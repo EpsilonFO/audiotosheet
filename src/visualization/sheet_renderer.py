@@ -82,7 +82,7 @@ class SheetRenderer:
                 subprocess.run(['lilypond', '-o', os.path.join(output_dir, output_name), tmp_path], 
                                check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
                 
-                # Nettoyer
+                # Nettoyerr
                 os.unlink(tmp_path)
                 
             except Exception as e:
